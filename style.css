@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-image: url(img/baground.png);
+}
+.navbar {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    background-color: burlywood;
+    -webkit-box-shadow: 3px 10px 25px -19px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 10px 25px -19px rgba(0, 0, 0, 0.75);
+    box-shadow:  3px 10px 25px -19px rgba(0, 0, 0, 0.75);
+}
+.navbar ul {
+    list-style: none;
+    margin: 20px;
+    padding: 20px 10px 23px;
+    -webkit-box-shadow: 3px 10px 25px -19px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 10px 25px -19px rgba(0, 0, 0, 0.75);
+    box-shadow:  3px 10px 25px -19px rgba(0, 0, 0, 0.75);
+}
+.navbar ul li {
+    display: inline;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    padding-right: 20px;
+}
+.navbar h1 {
+    font-size: 50px;
+    font-weight: 600; 
+  
+}
+.navbar ul li a {
+    text-decoration: none;
+}
+.main {
+    flex-direction: row-reverse;
+    justify-content: center;
+    display: flex;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    width: 100%;
+}
+.sidebar {
+    background-color: brown;
+    width: 30%;
+    height: 130vh;
+    padding: 17px 10px 10px 10px;
+    border: 1px solid black;
+    flex-direction: column;
+    display: none;
+}
+.card-order {
+    width: 90%;
+    height: 50px;
+    margin: 12px;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    justify-content: space-between; /* Ensure space between elements */
+    align-items: center; /* Vertically center items */
+    -webkit-box-shadow: 9px 9px 18px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 9px 18px -13px rgba(0, 0, 0, 0.75);
+    box-shadow:  9px 9px 18px -13px rgba(0, 0, 0, 0.75);
+}
+.card-order img {
+    width: 50px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.card-order p {
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
+    text-align: left;
+    flex: 1; /* Ensure it takes available space */
+}
+.card-order span {
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    color: green;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+.card-order button {
+    background-color: rgb(214, 11, 11);
+    border-radius: 10px;
+    padding: 0;
+    margin: 10px 20px 10px 0; /* Adjusted for better alignment */
+    width: 80px;
+    height: 30px;
+    border: none;
+    color: whitesmoke;
+    font-weight: 500;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+.card {
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    display: inline-block;
+    -webkit-box-shadow: 9px 9px 18px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 9px 18px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 9px 18px -13px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    text-align: center;
+    padding: 16px;
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.card p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #4e4e4e;
+}
+.card hr {
+    margin: 10px;
+    color: #b8b8b8;
+    border-color: #e2e1e1;
+}
+.action {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px 10px 10px;
+}
+.order span {
+    font-size: 17px;
+    font-weight: 800;
+}
+.card-finish button {
+    border: none;
+    text-align: center;
+    width: 90%;
+    height: 50px;
+    margin: 10px;
+    background-color: orange;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    -webkit-box-shadow: 9px 9px 18px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 9px 18px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 9px 18px -13px rgba(0, 0, 0, 0.75);
+}
+.card-finish button:hover {
+    background-color: rgb(211, 120, 0);
+}
+.star {
+    margin: 10px 0;
+    text-align: center;
+}
+.star i {
+    color: orange;
+    font-size: 20px;
+}
+.total {
+    margin: 0px 10px 20px 15px;
+    text-align: center;
+}
+.total h1 {
+    color: white;
+}
+.detail {
+    width: 70%;
+    display: flex;
+}
+.about {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+.about img {
+    width: 300px;
+}
+.team {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.person {
+    margin-top: 20px;
+    margin: 0 10px;
+    width: 200px;
+    height: 200px;
+}
+.person img {
+    border-radius: 100px;
+    width: 100px;
+}
+.person p {
+    font-size: 18px;
+    font-weight: 500;
+}
+.person span {
+    font-size: 14px;
+}
+.fas {
+    color: whitesmoke;
+}
+.action button {
+    background-color: green;
+    border-radius: 10px;
+    border: none;
+    color: wheat;
+}
+.action button:hover {
+    background-color: greenyellow;
+}
+.fa-star {
+    color: orange;
+    font-size: 24px;
+}
